@@ -18,7 +18,12 @@ public class ConsoleExercises {
 //        System.out.println("You entered:-->\""+ age + "\"<--");
 //        System.out.println("You entered:-->\""+ str + "\"<--");
 
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the length and width of your room: ");
+        float nextString = scanner.nextFloat();
+        float nextNString = scanner.nextFloat();
+        float total = ((nextString + nextNString) * 2);
+        System.out.println("This is the area " + total);
 
 
     }
