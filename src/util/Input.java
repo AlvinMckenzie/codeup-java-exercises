@@ -5,9 +5,12 @@ import java.util.Scanner;
 public class Input {
     public static void main(String[] args) {
         Input myInput = new Input(new Scanner(System.in));
-        System.out.println("myInput.getString() = " + myInput.getString());
-        System.out.println("myInput.yesNo() = " + myInput.yesNo());
-        System.out.println("myInput.getInt() = " + myInput.getInt(1,10));
+        myInput.getString();
+        myInput.yesNo();
+        myInput.getInt(1,10);
+        myInput.getInt();
+        myInput.getDouble(1,10);
+        myInput.getDouble();
     }
 
     private Scanner scanner;
@@ -44,7 +47,24 @@ public class Input {
         int num = scanner.nextInt();
         System.out.println(num);
         return num;
+    }
 
+    public double getDouble(double min, double max){
+        System.out.println("Enter number between min and max:");
+        double num = scanner.nextDouble();
+        if (num < min || num > max) {
+            return getDouble(min, max);
+        }
+        else {
+            return num;
+        }
+    }
+
+    public double getDouble(){
+        System.out.println("Enter a number:");
+        double num = scanner.nextDouble();
+        System.out.println(num);
+        return num;
     }
 
 
