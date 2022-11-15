@@ -7,6 +7,7 @@ public class Input {
         Input myInput = new Input(new Scanner(System.in));
         System.out.println("myInput.getString() = " + myInput.getString());
         System.out.println("myInput.yesNo() = " + myInput.yesNo());
+        System.out.println("myInput.getInt() = " + myInput.getInt(1,10));
     }
 
     private Scanner scanner;
@@ -17,33 +18,34 @@ public class Input {
     }
 
     public String getString(){
+        System.out.println("Enter String here:");
         return scanner.nextLine();
     }
 
     public boolean yesNo(){
+        System.out.println("Enter y or false:");
         String nextLine = this.scanner.nextLine();
         return (nextLine.equalsIgnoreCase("y") || nextLine.equalsIgnoreCase("yes") || nextLine.equalsIgnoreCase("true"));
     }
 
     public int getInt(int min, int max){
-        System.out.println("Guess a number between " +  min + " and " + max);
+        System.out.println("Enter number between min and max:");
         int num = scanner.nextInt();
         if (num < min || num > max) {
-            getInt(min, max);
-        } else {
-            System.out.println(num);
+            return getInt(min, max);
+        }
+        else {
             return num;
         }
-        return num;
     }
 
+    public int getInt (){
+        System.out.println("Enter a number:");
+        int num = scanner.nextInt();
+        System.out.println(num);
+        return num;
 
-
-
-
-
-
-
+    }
 
 
 }
