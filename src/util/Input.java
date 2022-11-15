@@ -25,6 +25,17 @@ public class Input {
         return (nextLine.equalsIgnoreCase("y") || nextLine.equalsIgnoreCase("yes") || nextLine.equalsIgnoreCase("true"));
     }
 
+    public int getInt(int min, int max){
+        System.out.println("Guess a number between " +  min + " and " + max);
+        int num = scanner.nextInt();
+        if (num < min || num > max) {
+            getInt(min, max);
+        } else {
+            System.out.println(num);
+            return num;
+        }
+        return num;
+    }
 
 
 
