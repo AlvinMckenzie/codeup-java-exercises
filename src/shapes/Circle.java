@@ -1,14 +1,17 @@
 package shapes;
 
 public class Circle {
-    private double raduis;
+    private double radius;
 
+    public Circle(double radius){
+        this.radius = radius;
+    }
     public double getArea(){
-        return Math.Pi * (math.pow(raduis,2));
+        return Math.PI * (Math.pow(radius,2));
     }
 
     public double getCircumference(){
-        return 2 * Math.Pi * raduis;
+        return 2 * Math.PI * radius;
     }
 
 }
