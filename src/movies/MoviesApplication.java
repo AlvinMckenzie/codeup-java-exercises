@@ -25,7 +25,23 @@ public class MoviesApplication {
 
 
         for (int i = 0; i < MoviesArray.findAll().length; i++){
-            if (y == 3 && MoviesArray.findAll()[i].getCategory() == "drama") {  System.out.println(MoviesArray.findAll()[i].getName());};
+            if (y == 0 && MoviesArray.findAll()[i].getCategory() == "exit") {  System.out.println(MoviesArray.findAll()[i].getName());
+
+            } else if (y == 1) {  System.out.println(MoviesArray.findAll()[i].getName());
+
+            } else if (y == 2 && MoviesArray.findAll()[i].getCategory() == "animated") {  System.out.println(MoviesArray.findAll()[i].getName());
+
+            } else if (y == 3 && MoviesArray.findAll()[i].getCategory() == "drama") {  System.out.println(MoviesArray.findAll()[i].getName());
+
+            } else if (y == 4 && MoviesArray.findAll()[i].getCategory() == "horror") {  System.out.println(MoviesArray.findAll()[i].getName());
+
+            } else if (y == 5 && MoviesArray.findAll()[i].getCategory() == "scifi") {  System.out.println(MoviesArray.findAll()[i].getName());
+
+            } else if (y == 6 && MoviesArray.findAll()[i].getCategory() == "musical") {  System.out.println(MoviesArray.findAll()[i].getName());
+
+            } else if (y == 7 && MoviesArray.findAll()[i].getCategory() == "comedy") {  System.out.println(MoviesArray.findAll()[i].getName());
+            }
         }
+
     }
 }
