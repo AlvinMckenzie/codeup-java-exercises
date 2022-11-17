@@ -6,13 +6,15 @@ import util.Input;
 import java.util.Scanner;
 
 public class MoviesApplication {
-    public static void main(String[] args) {
-        movieCat();
-    }
+
+
+
+
 
     public static void movieCat(){
         Input x = new Input(new Scanner(System.in));
         int y = x.getInt();
+
         System.out.println("What would you like to do?");
         System.out.println("0 - exit");
         System.out.println("1 - view all movies");
@@ -23,11 +25,10 @@ public class MoviesApplication {
         System.out.println("6 - view movies in the musical category");
         System.out.println("7 - view movies in the comedy category");
 
-
         for (int i = 0; i < MoviesArray.findAll().length; i++){
             if (y == 0 && MoviesArray.findAll()[i].getCategory() == "exit") {  System.out.println(MoviesArray.findAll()[i].getName());
 
-            } else if (y == 1) {  System.out.println(MoviesArray.findAll()[i].getName());
+            } else if (y == 1) {System.out.println(MoviesArray.findAll()[i].getName());
 
             } else if (y == 2 && MoviesArray.findAll()[i].getCategory() == "animated") {  System.out.println(MoviesArray.findAll()[i].getName());
 
@@ -42,6 +43,11 @@ public class MoviesApplication {
             } else if (y == 7 && MoviesArray.findAll()[i].getCategory() == "comedy") {  System.out.println(MoviesArray.findAll()[i].getName());
             }
         }
+
+    }
+
+    public static void main(String[] args) {
+        movieCat();
 
     }
 }
