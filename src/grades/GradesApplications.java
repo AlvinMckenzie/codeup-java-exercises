@@ -6,17 +6,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-
-
-
-
 public class GradesApplications {
 
     public static void getGrades() {
         HashMap<String, Students> students = new HashMap<>();
         Students students1 = new Students("Tom", new ArrayList<>());
-        Students students2 = new Students("Dick", new ArrayList<>());
-        Students students3 = new Students("Or", new ArrayList<>());
+        Students students2 = new Students("Derik", new ArrayList<>());
+        Students students3 = new Students("Winston", new ArrayList<>());
         Students students4 = new Students("Harry", new ArrayList<>());
         students1.addGrade(50);
         students1.addGrade(60);
