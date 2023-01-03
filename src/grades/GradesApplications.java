@@ -42,7 +42,7 @@ public class GradesApplications {
         } else if (userInput.equalsIgnoreCase("Cole")) {
             System.out.println("Name: " + students.get("Cole").getName() + " - Github Username: Cole \nGrade Average: " + students.get("Cole").getGradeAverage() + "\n");
         } else if (userInput.equalsIgnoreCase("Genna")) {
-            System.out.println("Name: " + students.get("Genna").getName() + " - Github Username: Genna  \nGrade Average: " + students.get("Genna").getGradeAverage() + "\n");
+            System.out.println("Name: " + students.get("Genna").getName() + " - Github Username: Gina  \nGrade Average: " + students.get("Gina").getGradeAverage() + "\n");
         } else {
             System.out.println("Sorry wrong student");
         }
