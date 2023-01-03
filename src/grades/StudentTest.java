@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class StudentTest {
 
     public static void main(String[] args) {
-        Students students1 = new Students("Tom", new ArrayList<>());
-        Students students2 = new Students("Dick", new ArrayList<>());
-        Students students3 = new Students("Harry", new ArrayList<>());
+        Students students1 = new Students("Tommy", new ArrayList<>());
+        Students students2 = new Students("Pam", new ArrayList<>());
+        Students students3 = new Students("Gina", new ArrayList<>());
         students1.addGrade(50);
         students1.addGrade(60);
         students1.addGrade(45);

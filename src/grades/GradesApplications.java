@@ -10,10 +10,10 @@ public class GradesApplications {
 
     public static void getGrades() {
         HashMap<String, Students> students = new HashMap<>();
-        Students students1 = new Students("Tom", new ArrayList<>());
-        Students students2 = new Students("Derik", new ArrayList<>());
-        Students students3 = new Students("Winston", new ArrayList<>());
-        Students students4 = new Students("Harry", new ArrayList<>());
+        Students students1 = new Students("Tommy", new ArrayList<>());
+        Students students2 = new Students("Pam", new ArrayList<>());
+        Students students3 = new Students("Gina", new ArrayList<>());
+        Students students4 = new Students("Cole", new ArrayList<>());
         students1.addGrade(50);
         students1.addGrade(60);
         students1.addGrade(45);
