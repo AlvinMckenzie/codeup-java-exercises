@@ -1,4 +1,4 @@
-package grades;
+package Grade;
 
 import util.Input;
 
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class GradesApplications {
+public class GradesApp {
 
     public static void getGrades() {
         HashMap<String, Students> students = new HashMap<>();
@@ -55,6 +55,6 @@ public class GradesApplications {
 
     public static void main(String[] args) {
         getGrades();
-        
+
     }
 }

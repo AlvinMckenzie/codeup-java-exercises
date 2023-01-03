@@ -1,4 +1,4 @@
-package grades;
+package Grade;
 
 import java.util.ArrayList;
 
